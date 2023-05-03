@@ -12,7 +12,9 @@ const runningScore = document.createElement('p')
 function playRound(playerSelection) {
     //let playerSelection = prompt("Choose your move:");//
     let computerSelection = getComputerChoice();
-    if (playerSelection.toLowerCase() == computerSelection.toLowerCase()) {
+    if (score == 5 || computerScore == 5) {
+        location.reload()
+    } else if (playerSelection.toLowerCase() == computerSelection.toLowerCase()) {
         results.textContent = "Tie"
     } else if (playerSelection.toLowerCase() == 'rock' && computerSelection.toLowerCase() == 'paper') {
         computerScore += 1
