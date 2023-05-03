@@ -1,3 +1,23 @@
+* {
+    background-color: skyblue;
+}
+
 h1 {
     text-align: center;
+    font-family: system-ui;
+    color: yellow;
+}
+
+div {
+    display: flex;
+    justify-content: space-between;
+}
+img {
+    max-width: 200px;
+}
+
+p {
+    font-family: system-ui;
+    text-align: center;
+    color: yellow;
 }
